@@ -1,0 +1,59 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .product-card {
+    width: 200px;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px; /* Add margin 20px from top, left, bottom, and right */
+    text-align: center;
+  }
+  
+  .brand {
+    font-weight: bold;
+  }
+  
+  .title {
+    margin-top: 5px;
+  }
+  
+  .price {
+    color: red;
+    font-weight: bold;
+    text-decoration: line-through;
+  }
+  
+  .discount-price {
+    color: green;
+    font-weight: bold;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 1200px) {
+    .product-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .product-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .product-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
